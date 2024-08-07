@@ -1,0 +1,13 @@
+apiVersion: app.spacelift.io/v1beta1
+kind: Stack
+metadata:
+  name: stack-sample
+spec:
+  name: spacelift operator stack
+  spaceName: space-sample
+  administrative: false
+  branch: main
+  repository: saturnhead/blog-examples
+  projectRoot: custom-workflows
+  labels: 
+    - k8soperator
